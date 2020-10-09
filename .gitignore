@@ -1,6 +1,6 @@
 *.py[co]
+/catalyst/version.py
 
 /build/
 /dist/
 /files/
-/MANIFEST

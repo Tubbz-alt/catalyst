@@ -1,0 +1,77 @@
+[project]
+name = "catalyst"
+description = "Tool for creating releases based on Gentoo Linux"
+authors = [
+    "Andrew Gaffney <agaffney@gentoo.org>",
+    "Anthony G. Basile <blueness@gentoo.org>",
+    "Ben Kohler <bkohler@gmail.com>",
+    "Brian Dolbec <dolsen@gentoo.org>",
+    "Chris Gianelloni <wolf31o2@gentoo.org>",
+    "Daniel Ostrow <dostrow@gentoo.org>",
+    "David Bryson <mutex@gentoo.org>",
+    "Diego Pettenò <flameeyes@gentoo.org>",
+    "Douglas Freed <dwfreed@mtu.edu>",
+    "Dylan Baker <baker.dylan.c@gmail.com>",
+    "Eric Edgar <rocket@gentoo.org>",
+    "Gustavo Zacarias <gustavoz@gentoo.org>",
+    "Guy Martin <gmsoft@gentoo.org>",
+    "Jeremy Olexa <darkside@gentoo.org>",
+    "Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>",
+    "Joshua Kinard <kumba@gentoo.org>",
+    "Kevin Zhao <kevin.zhaoshuai@gmail.com>",
+    "Lars Weiler <pylon@gentoo.org>",
+    "Matsuu Takuto <matsuu@gentoo.org>",
+    "Matt Turner <mattst88@gentoo.org>",
+    "Mike Frysinger <vapier@gentoo.org>",
+    "Raúl Porcel <armin76@gentoo.org>",
+    "Rick Farina <zerochaos@gentoo.org>",
+    "Robert Paskowitz <r2d2@gentoo.org>",
+    "Rob Holland <tigger@gentoo.org>",
+    "Robin H. Johnson <robbat2@gentoo.org>",
+    "Sebastian Pipping <sebastian@pipping.org>",
+    "Stuart Longland <redhatter@gentoo.org>",
+    "William Hubbs <w.d.hubbs@gmail.com>",
+    "W. Trevor King <wking@tremily.us>",
+    "Yuta SATOH <nigoro.dev@gmail.com>",
+]
+maintainers = [
+    "Catalyst maintainers <catalyst@gentoo.org>",
+    "Catalyst mailing list <gentoo-catalyst@lists.gentoo.org>",
+]
+license = "GPL-2.0-or-later"
+readme = "README"
+python = "^3.8"
+homepage = "https://wiki.gentoo.org/wiki/Project:Catalyst"
+repository = "https://gitweb.gentoo.org/proj/catalyst.git/"
+documentation = "https://wiki.gentoo.org/wiki/Catalyst"
+
+keywords = ["gentoo"]
+
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)',
+    'Intended Audience :: System Administrators',
+    'Operating System :: POSIX',
+    'Topic :: System :: Archiving :: Packaging',
+    'Topic :: System :: Installation/Setup',
+    'Topic :: System :: Software Distribution',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.8',
+]
+
+# Requirements
+[dependencies]
+
+[dev-dependencies]
+
+[scripts]
+
+[build-system]
+requires = [
+    "setuptools >= 42",
+    "setuptools_scm[toml] >= 3.4",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "catalyst/version.py"

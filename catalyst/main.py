@@ -18,13 +18,11 @@ import catalyst.config
 from catalyst.defaults import (confdefaults, option_messages,
                                DEFAULT_CONFIG_FILE, valid_config_file_values)
 from catalyst.support import CatalystError
-from catalyst.version import get_version
 
 conf_values = confdefaults
 
 
 def version():
-    log.info(get_version())
     log.info('Copyright 2003-%s Gentoo Foundation',
              datetime.datetime.now().year)
     log.info('Copyright 2008-2012 various authors')
@@ -118,7 +116,7 @@ def get_parser():
         epilog=epilog, formatter_class=argparse.RawDescriptionHelpFormatter)
 
     parser.add_argument('-V', '--version',
-                        action='version', version=get_version(),
+                        action='version', version=catalyst.__version__,
                         help='display version information')
 
     group = parser.add_argument_group('Program output options')
